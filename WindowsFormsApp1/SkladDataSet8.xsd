@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SkladDataSet8" targetNamespace="http://tempuri.org/SkladDataSet8.xsd" xmlns:mstns="http://tempuri.org/SkladDataSet8.xsd" xmlns="http://tempuri.org/SkladDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SkladConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SkladConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.SkladConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="All_Transport2TableAdapter" GeneratorDataComponentClassName="All_Transport2TableAdapter" Name="All_Transport2" UserDataComponentName="All_Transport2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SkladConnectionString (Settings)" DbObjectName="Sklad.dbo.All_Transport2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Vid, Marka, Mass, Postavchik, Opisanie FROM dbo.All_Transport2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Vid" DataSetColumn="Vid" />
+              <Mapping SourceColumn="Marka" DataSetColumn="Marka" />
+              <Mapping SourceColumn="Mass" DataSetColumn="Mass" />
+              <Mapping SourceColumn="Postavchik" DataSetColumn="Postavchik" />
+              <Mapping SourceColumn="Opisanie" DataSetColumn="Opisanie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SkladDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SkladDataSet8" msprop:Generator_UserDSName="SkladDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="All_Transport2" msprop:Generator_TableClassName="All_Transport2DataTable" msprop:Generator_TableVarName="tableAll_Transport2" msprop:Generator_TablePropName="All_Transport2" msprop:Generator_RowDeletingName="All_Transport2RowDeleting" msprop:Generator_RowChangingName="All_Transport2RowChanging" msprop:Generator_RowEvHandlerName="All_Transport2RowChangeEventHandler" msprop:Generator_RowDeletedName="All_Transport2RowDeleted" msprop:Generator_UserTableName="All_Transport2" msprop:Generator_RowChangedName="All_Transport2RowChanged" msprop:Generator_RowEvArgName="All_Transport2RowChangeEvent" msprop:Generator_RowClassName="All_Transport2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Vid" msprop:Generator_ColumnVarNameInTable="columnVid" msprop:Generator_ColumnPropNameInRow="Vid" msprop:Generator_ColumnPropNameInTable="VidColumn" msprop:Generator_UserColumnName="Vid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marka" msprop:Generator_ColumnVarNameInTable="columnMarka" msprop:Generator_ColumnPropNameInRow="Marka" msprop:Generator_ColumnPropNameInTable="MarkaColumn" msprop:Generator_UserColumnName="Marka" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mass" msprop:Generator_ColumnVarNameInTable="columnMass" msprop:Generator_ColumnPropNameInRow="Mass" msprop:Generator_ColumnPropNameInTable="MassColumn" msprop:Generator_UserColumnName="Mass" type="xs:int" minOccurs="0" />
+              <xs:element name="Postavchik" msprop:Generator_ColumnVarNameInTable="columnPostavchik" msprop:Generator_ColumnPropNameInRow="Postavchik" msprop:Generator_ColumnPropNameInTable="PostavchikColumn" msprop:Generator_UserColumnName="Postavchik" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Opisanie" msprop:Generator_ColumnVarNameInTable="columnOpisanie" msprop:Generator_ColumnPropNameInRow="Opisanie" msprop:Generator_ColumnPropNameInTable="OpisanieColumn" msprop:Generator_UserColumnName="Opisanie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:All_Transport2" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
