@@ -14,8 +14,6 @@ namespace WindowsFormsApp1
 {
     public partial class MarkaForm : Form
     {
-        public static string connectionString = @"Data Source=DESKTOP-8G1ENMJ\KRNALX;Initial Catalog=Sklad;Integrated Security=True";
-        public static SqlConnection conn = new SqlConnection(connectionString);
         public MarkaForm()
         {
             InitializeComponent();
@@ -30,15 +28,10 @@ namespace WindowsFormsApp1
 
         private void DobavlenieMarka_Click(object sender, EventArgs e)
         {
-            string id = textBoxMarkaID.Text;
             string name = textBoxMarkaName.Text;
-            conn.Open();
-            string d = "INSERT INTO Marka(Id, Name) VALUES(" + id + ", '" + name + "')";
-            SqlCommand command = new SqlCommand(d, conn);
-            command.ExecuteNonQuery();
-            conn.Close();
+            Marka m = new Marka();
+            m.Insert(name);
             this.markaTableAdapter.Fill(this.skladDataSet5.Marka);
-            textBoxMarkaID.Text = "";
             textBoxMarkaName.Text = "";
         }
 
@@ -52,14 +45,10 @@ namespace WindowsFormsApp1
             else
             {
                 int id = Convert.ToInt32(dataGridViewMarka[0, f].Value);
-                string a = "DELETE FROM Marka WHERE Id = " + id.ToString();
-                conn.Open();
-                SqlCommand command = new SqlCommand(a, conn);
-                command.ExecuteNonQuery();
-                conn.Close();
+                Marka m = new Marka();
+                m.Delete(id);
                 this.markaTableAdapter.Fill(this.skladDataSet5.Marka);
             }
-            textBoxRedakMarkaID.Text = "";
             textBoxRedakMarkaName.Text = "";
         }
 
@@ -68,14 +57,11 @@ namespace WindowsFormsApp1
             int f = dataGridViewMarka.CurrentRow.Index;
             string name = textBoxRedakMarkaName.Text;
             int id = Convert.ToInt32(dataGridViewMarka[0, f].Value);
-            string h = "UPDATE Marka set Name='" + name + "' WHERE Id=" + id + "";
-            conn.Open();
-            SqlCommand command = new SqlCommand(h, conn);
-            command.ExecuteNonQuery();
-            conn.Close();
+            Marka m = new Marka();
+            m.Update(name,id);
             this.markaTableAdapter.Fill(this.skladDataSet5.Marka);
-            textBoxRedakMarkaID.Text = "";
             textBoxRedakMarkaName.Text = "";
+
         }
 
         private void dataGridViewMarka_CellClick(object sender, DataGridViewCellEventArgs e)

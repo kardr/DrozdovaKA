@@ -39,6 +39,8 @@
             this.postavchikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.opisanieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.allTransport2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.skladDataSet9 = new WindowsFormsApp1.SkladDataSet9();
             this.allTransport2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.skladDataSet8 = new WindowsFormsApp1.SkladDataSet8();
             this.allTransportBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -50,17 +52,15 @@
             this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.моделиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.all_Transport2TableAdapter = new WindowsFormsApp1.SkladDataSet8TableAdapters.All_Transport2TableAdapter();
-            this.skladDataSet9 = new WindowsFormsApp1.SkladDataSet9();
-            this.allTransport2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.all_Transport2TableAdapter1 = new WindowsFormsApp1.SkladDataSet9TableAdapters.All_Transport2TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allTransport2BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skladDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allTransport2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allTransportBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladDataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skladDataSet9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.allTransport2BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -107,7 +107,7 @@
             this.dataGridViewTransport.Location = new System.Drawing.Point(12, 45);
             this.dataGridViewTransport.Name = "dataGridViewTransport";
             this.dataGridViewTransport.RowHeadersVisible = false;
-            this.dataGridViewTransport.Size = new System.Drawing.Size(616, 150);
+            this.dataGridViewTransport.Size = new System.Drawing.Size(616, 217);
             this.dataGridViewTransport.TabIndex = 3;
             // 
             // idDataGridViewTextBoxColumn
@@ -145,6 +145,16 @@
             this.opisanieDataGridViewTextBoxColumn.DataPropertyName = "Opisanie";
             this.opisanieDataGridViewTextBoxColumn.HeaderText = "Opisanie";
             this.opisanieDataGridViewTextBoxColumn.Name = "opisanieDataGridViewTextBoxColumn";
+            // 
+            // allTransport2BindingSource1
+            // 
+            this.allTransport2BindingSource1.DataMember = "All_Transport2";
+            this.allTransport2BindingSource1.DataSource = this.skladDataSet9;
+            // 
+            // skladDataSet9
+            // 
+            this.skladDataSet9.DataSetName = "SkladDataSet9";
+            this.skladDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // allTransport2BindingSource
             // 
@@ -217,16 +227,6 @@
             // 
             this.all_Transport2TableAdapter.ClearBeforeFill = true;
             // 
-            // skladDataSet9
-            // 
-            this.skladDataSet9.DataSetName = "SkladDataSet9";
-            this.skladDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // allTransport2BindingSource1
-            // 
-            this.allTransport2BindingSource1.DataMember = "All_Transport2";
-            this.allTransport2BindingSource1.DataSource = this.skladDataSet9;
-            // 
             // all_Transport2TableAdapter1
             // 
             this.all_Transport2TableAdapter1.ClearBeforeFill = true;
@@ -247,14 +247,14 @@
             this.Text = "Транспорт";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allTransport2BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skladDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allTransport2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allTransportBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skladDataSet9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.allTransport2BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

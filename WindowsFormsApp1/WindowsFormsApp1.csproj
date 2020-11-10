@@ -46,12 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avtorisazia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avtorisazia.Designer.cs">
+      <DependentUpon>Avtorisazia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marka.cs" />
     <Compile Include="MarkaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MarkaForm.Designer.cs">
       <DependentUpon>MarkaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Postavchik.cs" />
     <Compile Include="PostavchikForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +117,7 @@
     <Compile Include="TransporForm.Designer.cs">
       <DependentUpon>TransporForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transport.cs" />
     <Compile Include="TransportDialogForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,12 +131,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SkladDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Vid.cs" />
     <Compile Include="VidForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VidForm.Designer.cs">
       <DependentUpon>VidForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Avtorisazia.resx">
+      <DependentUpon>Avtorisazia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MarkaForm.resx">
       <DependentUpon>MarkaForm.cs</DependentUpon>
     </EmbeddedResource>

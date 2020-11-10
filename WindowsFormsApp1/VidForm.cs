@@ -14,8 +14,6 @@ namespace WindowsFormsApp1
 {
     public partial class VidForm : Form
     {
-        public static string connectionString = @"Data Source=DESKTOP-8G1ENMJ\KRNALX;Initial Catalog=Sklad;Integrated Security=True";
-        public static SqlConnection conn = new SqlConnection(connectionString);
         public VidForm()
         {
             InitializeComponent();
@@ -30,15 +28,10 @@ namespace WindowsFormsApp1
 
         private void DobavlenieVid_Click(object sender, EventArgs e)
         {
-            string id = textBoxVidID.Text;
             string name = textBoxVidName.Text;
-            conn.Open();
-            string d = "INSERT INTO Vid(Id, Name) VALUES(" + id + ", '" + name + "')";
-            SqlCommand command = new SqlCommand(d, conn);
-            command.ExecuteNonQuery();
-            conn.Close();
+            Vid v = new Vid();
+            v.Insert(name);
             this.vidTableAdapter.Fill(this.skladDataSet6.Vid);
-            textBoxVidID.Text = "";
             textBoxVidName.Text = "";
         }
 
@@ -52,14 +45,10 @@ namespace WindowsFormsApp1
             else
             {
                 int id = Convert.ToInt32(dataGridViewVid[0, f].Value);
-                string a = "DELETE FROM Vid WHERE Id = " + id.ToString();
-                conn.Open();
-                SqlCommand command = new SqlCommand(a, conn);
-                command.ExecuteNonQuery();
-                conn.Close();
+                Vid v = new Vid();
+                v.Delete(id);
                 this.vidTableAdapter.Fill(this.skladDataSet6.Vid);
             }
-            textBoxRedakVidID.Text = "";
             textBoxRedakVidName.Text = "";
         }
 
@@ -68,13 +57,9 @@ namespace WindowsFormsApp1
             int f = dataGridViewVid.CurrentRow.Index;
             string name = textBoxRedakVidName.Text;
             int id = Convert.ToInt32(dataGridViewVid[0, f].Value);
-            string h = "UPDATE Vid set Name='" + name + "' WHERE Id=" + id + "";
-            conn.Open();
-            SqlCommand command = new SqlCommand(h, conn);
-            command.ExecuteNonQuery();
-            conn.Close();
+            Vid v = new Vid();
+            v.Update(name,id);
             this.vidTableAdapter.Fill(this.skladDataSet6.Vid);
-            textBoxRedakVidID.Text = "";
             textBoxRedakVidName.Text = "";
         }
 

@@ -29,5 +29,10 @@ namespace WindowsFormsApp1
             this.vidTableAdapter.Fill(this.skladDataSet1.Vid);
 
         }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

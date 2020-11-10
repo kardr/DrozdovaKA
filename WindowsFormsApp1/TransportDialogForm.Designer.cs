@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textboxIDtransport = new System.Windows.Forms.TextBox();
-            this.idTransport = new System.Windows.Forms.Label();
             this.comboBoxIDmarka = new System.Windows.Forms.ComboBox();
             this.markaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.skladDataSet3 = new WindowsFormsApp1.SkladDataSet3();
@@ -53,10 +51,10 @@
             this.vidTableAdapter1 = new WindowsFormsApp1.SkladDataSet2TableAdapters.VidTableAdapter();
             this.markaTableAdapter = new WindowsFormsApp1.SkladDataSet3TableAdapters.MarkaTableAdapter();
             this.postavchikTableAdapter = new WindowsFormsApp1.SkladDataSet4TableAdapters.PostavchikTableAdapter();
-            this.Id = new System.Windows.Forms.Label();
             this.Mass = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMass = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.markaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skladDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vidBindingSource1)).BeginInit();
@@ -66,21 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.skladDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vidBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textboxIDtransport
-            // 
-            this.textboxIDtransport.Location = new System.Drawing.Point(38, 46);
-            this.textboxIDtransport.Name = "textboxIDtransport";
-            this.textboxIDtransport.Size = new System.Drawing.Size(121, 20);
-            this.textboxIDtransport.TabIndex = 0;
-            // 
-            // idTransport
-            // 
-            this.idTransport.AutoSize = true;
-            this.idTransport.Location = new System.Drawing.Point(49, 30);
-            this.idTransport.Name = "idTransport";
-            this.idTransport.Size = new System.Drawing.Size(0, 13);
-            this.idTransport.TabIndex = 1;
             // 
             // comboBoxIDmarka
             // 
@@ -198,6 +181,7 @@
             this.buttonOK.TabIndex = 10;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // buttonCancel
             // 
@@ -235,15 +219,6 @@
             // 
             this.postavchikTableAdapter.ClearBeforeFill = true;
             // 
-            // Id
-            // 
-            this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(38, 29);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(18, 13);
-            this.Id.TabIndex = 12;
-            this.Id.Text = "ID";
-            // 
             // Mass
             // 
             this.Mass.AutoSize = true;
@@ -268,6 +243,14 @@
             this.textBoxMass.Size = new System.Drawing.Size(121, 20);
             this.textBoxMass.TabIndex = 13;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(38, 52);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Visible = false;
+            // 
             // TransportDialogForm
             // 
             this.AcceptButton = this.buttonOK;
@@ -275,10 +258,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Mass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxMass);
-            this.Controls.Add(this.Id);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.Opisanie);
@@ -289,8 +272,6 @@
             this.Controls.Add(this.comboBoxIDpostavchik);
             this.Controls.Add(this.comboBoxIDvid);
             this.Controls.Add(this.comboBoxIDmarka);
-            this.Controls.Add(this.idTransport);
-            this.Controls.Add(this.textboxIDtransport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TransportDialogForm";
             this.Text = "Добавление транспорта";
@@ -321,8 +302,6 @@
         private SkladDataSet4 skladDataSet4;
         private System.Windows.Forms.BindingSource postavchikBindingSource;
         private SkladDataSet4TableAdapters.PostavchikTableAdapter postavchikTableAdapter;
-        public System.Windows.Forms.TextBox textboxIDtransport;
-        public System.Windows.Forms.Label idTransport;
         public System.Windows.Forms.ComboBox comboBoxIDmarka;
         public System.Windows.Forms.ComboBox comboBoxIDvid;
         public System.Windows.Forms.ComboBox comboBoxIDpostavchik;
@@ -333,9 +312,9 @@
         public System.Windows.Forms.Label Opisanie;
         public System.Windows.Forms.Button buttonOK;
         public System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Label Id;
         private System.Windows.Forms.Label Mass;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox textBoxMass;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -14,8 +14,7 @@ namespace WindowsFormsApp1
 {
     public partial class PostavchikForm : Form
     {
-        public static string connectionString = @"Data Source=DESKTOP-8G1ENMJ\KRNALX;Initial Catalog=Sklad;Integrated Security=True";
-        public static SqlConnection conn = new SqlConnection(connectionString);
+       
         public PostavchikForm()
         {
             InitializeComponent();
@@ -30,20 +29,15 @@ namespace WindowsFormsApp1
 
         private void DobavleniePostav_Click(object sender, EventArgs e)
         {
-            string id = textBoxPostavID.Text;
             string name = textBoxPostavName.Text;
             string address = textBoxPostavAdress.Text;
             string tel = textBoxPostavTelefon.Text;
-            conn.Open();
-            string d = "INSERT INTO Postavchik(Id, Name,Adress,Telefon) VALUES(" + id + ", '" + name + "', '" + address + "', '" + tel + "')";
-            SqlCommand command = new SqlCommand(d, conn);
-            command.ExecuteNonQuery();
-            conn.Close();
+            Postavchik p = new Postavchik();
+            p.Insert(name,address,tel);
             this.postavchikTableAdapter.Fill(this.skladDataSet7.Postavchik);
             textBoxPostavName.Text = "";
             textBoxPostavTelefon.Text = "";
             textBoxPostavAdress.Text = "";
-            textBoxPostavID.Text = "";
         }
 
         private void DeletePostav_Click(object sender, EventArgs e)
@@ -56,11 +50,8 @@ namespace WindowsFormsApp1
             else
             {
                 int id = Convert.ToInt32(dataGridViewPostav[0, f].Value);
-                string a = "DELETE FROM Postavchik WHERE Id = " + id.ToString();
-                conn.Open();
-                SqlCommand command = new SqlCommand(a, conn);
-                command.ExecuteNonQuery();
-                conn.Close();
+                Postavchik p = new Postavchik();
+                p.Delete(id);
                 this.postavchikTableAdapter.Fill(this.skladDataSet7.Postavchik);
             }
             textBoxPostavRedaAdres.Text = "";
@@ -75,11 +66,8 @@ namespace WindowsFormsApp1
             string address = textBoxPostavRedaAdres.Text;
             string tel = textBoxPostavRedaTel.Text;
             int id = Convert.ToInt32(dataGridViewPostav[0, f].Value);
-            string h = "UPDATE Postavchik set Name='" + name + "', Adress='" + address + "', Telefon='" + tel + "' WHERE Id=" + id + "";
-            conn.Open();
-            SqlCommand command = new SqlCommand(h, conn);
-            command.ExecuteNonQuery();
-            conn.Close();
+            Postavchik p = new Postavchik();
+            p.Update(name, address, tel, id);
             this.postavchikTableAdapter.Fill(this.skladDataSet7.Postavchik);
 
             textBoxPostavRedaAdres.Text = "";
