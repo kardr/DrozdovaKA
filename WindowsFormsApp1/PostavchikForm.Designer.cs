@@ -67,10 +67,10 @@
             this.adressDataGridViewTextBoxColumn,
             this.telefonDataGridViewTextBoxColumn});
             this.dataGridViewPostav.DataSource = this.postavchikBindingSource;
-            this.dataGridViewPostav.Location = new System.Drawing.Point(26, 12);
+            this.dataGridViewPostav.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewPostav.Name = "dataGridViewPostav";
             this.dataGridViewPostav.RowHeadersVisible = false;
-            this.dataGridViewPostav.Size = new System.Drawing.Size(501, 184);
+            this.dataGridViewPostav.Size = new System.Drawing.Size(421, 276);
             this.dataGridViewPostav.TabIndex = 0;
             this.dataGridViewPostav.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPostav_CellClick);
             // 
@@ -115,7 +115,7 @@
             // Namel
             // 
             this.Namel.AutoSize = true;
-            this.Namel.Location = new System.Drawing.Point(624, 55);
+            this.Namel.Location = new System.Drawing.Point(498, 26);
             this.Namel.Name = "Namel";
             this.Namel.Size = new System.Drawing.Size(83, 13);
             this.Namel.TabIndex = 25;
@@ -123,16 +123,16 @@
             // 
             // textBoxPostavName
             // 
-            this.textBoxPostavName.Location = new System.Drawing.Point(624, 74);
+            this.textBoxPostavName.Location = new System.Drawing.Point(498, 45);
             this.textBoxPostavName.Name = "textBoxPostavName";
             this.textBoxPostavName.Size = new System.Drawing.Size(100, 20);
             this.textBoxPostavName.TabIndex = 23;
             // 
             // DobavleniePostav
             // 
-            this.DobavleniePostav.Location = new System.Drawing.Point(623, 205);
+            this.DobavleniePostav.Location = new System.Drawing.Point(497, 176);
             this.DobavleniePostav.Name = "DobavleniePostav";
-            this.DobavleniePostav.Size = new System.Drawing.Size(99, 36);
+            this.DobavleniePostav.Size = new System.Drawing.Size(99, 38);
             this.DobavleniePostav.TabIndex = 21;
             this.DobavleniePostav.Text = "Добавление";
             this.DobavleniePostav.UseVisualStyleBackColor = true;
@@ -140,7 +140,7 @@
             // 
             // RedaktirPostav
             // 
-            this.RedaktirPostav.Location = new System.Drawing.Point(63, 380);
+            this.RedaktirPostav.Location = new System.Drawing.Point(654, 175);
             this.RedaktirPostav.Name = "RedaktirPostav";
             this.RedaktirPostav.Size = new System.Drawing.Size(99, 39);
             this.RedaktirPostav.TabIndex = 20;
@@ -150,7 +150,7 @@
             // 
             // DeletePostav
             // 
-            this.DeletePostav.Location = new System.Drawing.Point(313, 204);
+            this.DeletePostav.Location = new System.Drawing.Point(654, 220);
             this.DeletePostav.Name = "DeletePostav";
             this.DeletePostav.Size = new System.Drawing.Size(99, 39);
             this.DeletePostav.TabIndex = 19;
@@ -160,14 +160,14 @@
             // 
             // textBoxPostavAdress
             // 
-            this.textBoxPostavAdress.Location = new System.Drawing.Point(623, 125);
+            this.textBoxPostavAdress.Location = new System.Drawing.Point(497, 96);
             this.textBoxPostavAdress.Name = "textBoxPostavAdress";
             this.textBoxPostavAdress.Size = new System.Drawing.Size(100, 20);
             this.textBoxPostavAdress.TabIndex = 26;
             // 
             // textBoxPostavTelefon
             // 
-            this.textBoxPostavTelefon.Location = new System.Drawing.Point(623, 179);
+            this.textBoxPostavTelefon.Location = new System.Drawing.Point(497, 150);
             this.textBoxPostavTelefon.Name = "textBoxPostavTelefon";
             this.textBoxPostavTelefon.Size = new System.Drawing.Size(100, 20);
             this.textBoxPostavTelefon.TabIndex = 27;
@@ -175,7 +175,7 @@
             // Adress
             // 
             this.Adress.AutoSize = true;
-            this.Adress.Location = new System.Drawing.Point(620, 109);
+            this.Adress.Location = new System.Drawing.Point(494, 80);
             this.Adress.Name = "Adress";
             this.Adress.Size = new System.Drawing.Size(38, 13);
             this.Adress.TabIndex = 28;
@@ -184,7 +184,7 @@
             // Telefon
             // 
             this.Telefon.AutoSize = true;
-            this.Telefon.Location = new System.Drawing.Point(620, 163);
+            this.Telefon.Location = new System.Drawing.Point(494, 134);
             this.Telefon.Name = "Telefon";
             this.Telefon.Size = new System.Drawing.Size(52, 13);
             this.Telefon.TabIndex = 29;
@@ -193,7 +193,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 338);
+            this.label1.Location = new System.Drawing.Point(651, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 37;
@@ -202,7 +202,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 284);
+            this.label2.Location = new System.Drawing.Point(651, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 36;
@@ -210,14 +210,14 @@
             // 
             // textBoxPostavRedaTel
             // 
-            this.textBoxPostavRedaTel.Location = new System.Drawing.Point(63, 354);
+            this.textBoxPostavRedaTel.Location = new System.Drawing.Point(654, 149);
             this.textBoxPostavRedaTel.Name = "textBoxPostavRedaTel";
             this.textBoxPostavRedaTel.Size = new System.Drawing.Size(100, 20);
             this.textBoxPostavRedaTel.TabIndex = 35;
             // 
             // textBoxPostavRedaAdres
             // 
-            this.textBoxPostavRedaAdres.Location = new System.Drawing.Point(63, 300);
+            this.textBoxPostavRedaAdres.Location = new System.Drawing.Point(654, 95);
             this.textBoxPostavRedaAdres.Name = "textBoxPostavRedaAdres";
             this.textBoxPostavRedaAdres.Size = new System.Drawing.Size(100, 20);
             this.textBoxPostavRedaAdres.TabIndex = 34;
@@ -225,7 +225,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 230);
+            this.label3.Location = new System.Drawing.Point(655, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 33;
@@ -233,7 +233,7 @@
             // 
             // textBoxPostavRedakName
             // 
-            this.textBoxPostavRedakName.Location = new System.Drawing.Point(64, 249);
+            this.textBoxPostavRedakName.Location = new System.Drawing.Point(655, 44);
             this.textBoxPostavRedakName.Name = "textBoxPostavRedakName";
             this.textBoxPostavRedakName.Size = new System.Drawing.Size(100, 20);
             this.textBoxPostavRedakName.TabIndex = 31;
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 303);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxPostavRedaTel);

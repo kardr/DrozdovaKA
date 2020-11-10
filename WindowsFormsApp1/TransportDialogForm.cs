@@ -34,5 +34,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

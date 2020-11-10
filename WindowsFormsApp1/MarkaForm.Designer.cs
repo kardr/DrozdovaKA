@@ -55,10 +55,10 @@
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn});
             this.dataGridViewMarka.DataSource = this.markaBindingSource;
-            this.dataGridViewMarka.Location = new System.Drawing.Point(65, 47);
+            this.dataGridViewMarka.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewMarka.Name = "dataGridViewMarka";
             this.dataGridViewMarka.RowHeadersVisible = false;
-            this.dataGridViewMarka.Size = new System.Drawing.Size(231, 184);
+            this.dataGridViewMarka.Size = new System.Drawing.Size(208, 259);
             this.dataGridViewMarka.TabIndex = 0;
             this.dataGridViewMarka.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMarka_CellClick);
             // 
@@ -90,7 +90,7 @@
             // 
             // DobavlenieMarka
             // 
-            this.DobavlenieMarka.Location = new System.Drawing.Point(389, 160);
+            this.DobavlenieMarka.Location = new System.Drawing.Point(240, 59);
             this.DobavlenieMarka.Name = "DobavlenieMarka";
             this.DobavlenieMarka.Size = new System.Drawing.Size(99, 36);
             this.DobavlenieMarka.TabIndex = 7;
@@ -100,7 +100,7 @@
             // 
             // RedaktirMarka
             // 
-            this.RedaktirMarka.Location = new System.Drawing.Point(602, 202);
+            this.RedaktirMarka.Location = new System.Drawing.Point(377, 59);
             this.RedaktirMarka.Name = "RedaktirMarka";
             this.RedaktirMarka.Size = new System.Drawing.Size(99, 39);
             this.RedaktirMarka.TabIndex = 6;
@@ -110,7 +110,7 @@
             // 
             // DeleteMarka
             // 
-            this.DeleteMarka.Location = new System.Drawing.Point(125, 237);
+            this.DeleteMarka.Location = new System.Drawing.Point(378, 104);
             this.DeleteMarka.Name = "DeleteMarka";
             this.DeleteMarka.Size = new System.Drawing.Size(99, 39);
             this.DeleteMarka.TabIndex = 5;
@@ -121,7 +121,7 @@
             // Namel
             // 
             this.Namel.AutoSize = true;
-            this.Namel.Location = new System.Drawing.Point(386, 106);
+            this.Namel.Location = new System.Drawing.Point(240, 17);
             this.Namel.Name = "Namel";
             this.Namel.Size = new System.Drawing.Size(83, 13);
             this.Namel.TabIndex = 18;
@@ -129,7 +129,7 @@
             // 
             // textBoxMarkaName
             // 
-            this.textBoxMarkaName.Location = new System.Drawing.Point(386, 125);
+            this.textBoxMarkaName.Location = new System.Drawing.Point(240, 33);
             this.textBoxMarkaName.Name = "textBoxMarkaName";
             this.textBoxMarkaName.Size = new System.Drawing.Size(100, 20);
             this.textBoxMarkaName.TabIndex = 16;
@@ -137,7 +137,7 @@
             // NameRedakMarka
             // 
             this.NameRedakMarka.AutoSize = true;
-            this.NameRedakMarka.Location = new System.Drawing.Point(599, 141);
+            this.NameRedakMarka.Location = new System.Drawing.Point(375, 16);
             this.NameRedakMarka.Name = "NameRedakMarka";
             this.NameRedakMarka.Size = new System.Drawing.Size(83, 13);
             this.NameRedakMarka.TabIndex = 22;
@@ -145,7 +145,7 @@
             // 
             // textBoxRedakMarkaName
             // 
-            this.textBoxRedakMarkaName.Location = new System.Drawing.Point(599, 160);
+            this.textBoxRedakMarkaName.Location = new System.Drawing.Point(377, 32);
             this.textBoxRedakMarkaName.Name = "textBoxRedakMarkaName";
             this.textBoxRedakMarkaName.Size = new System.Drawing.Size(100, 20);
             this.textBoxRedakMarkaName.TabIndex = 20;
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 293);
             this.Controls.Add(this.NameRedakMarka);
             this.Controls.Add(this.textBoxRedakMarkaName);
             this.Controls.Add(this.Namel);

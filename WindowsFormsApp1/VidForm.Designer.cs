@@ -55,10 +55,10 @@
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn});
             this.dataGridViewVid.DataSource = this.vidBindingSource;
-            this.dataGridViewVid.Location = new System.Drawing.Point(12, 27);
+            this.dataGridViewVid.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewVid.Name = "dataGridViewVid";
             this.dataGridViewVid.RowHeadersVisible = false;
-            this.dataGridViewVid.Size = new System.Drawing.Size(266, 227);
+            this.dataGridViewVid.Size = new System.Drawing.Size(232, 282);
             this.dataGridViewVid.TabIndex = 0;
             this.dataGridViewVid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVid_CellClick);
             // 
@@ -90,7 +90,7 @@
             // 
             // DobavlenieVid
             // 
-            this.DobavlenieVid.Location = new System.Drawing.Point(330, 163);
+            this.DobavlenieVid.Location = new System.Drawing.Point(281, 62);
             this.DobavlenieVid.Name = "DobavlenieVid";
             this.DobavlenieVid.Size = new System.Drawing.Size(99, 36);
             this.DobavlenieVid.TabIndex = 10;
@@ -100,7 +100,7 @@
             // 
             // RedaktirVid
             // 
-            this.RedaktirVid.Location = new System.Drawing.Point(520, 160);
+            this.RedaktirVid.Location = new System.Drawing.Point(422, 61);
             this.RedaktirVid.Name = "RedaktirVid";
             this.RedaktirVid.Size = new System.Drawing.Size(99, 39);
             this.RedaktirVid.TabIndex = 9;
@@ -110,7 +110,7 @@
             // 
             // DeleteVid
             // 
-            this.DeleteVid.Location = new System.Drawing.Point(520, 215);
+            this.DeleteVid.Location = new System.Drawing.Point(422, 106);
             this.DeleteVid.Name = "DeleteVid";
             this.DeleteVid.Size = new System.Drawing.Size(99, 39);
             this.DeleteVid.TabIndex = 8;
@@ -120,7 +120,7 @@
             // 
             // textBoxVidName
             // 
-            this.textBoxVidName.Location = new System.Drawing.Point(330, 115);
+            this.textBoxVidName.Location = new System.Drawing.Point(281, 36);
             this.textBoxVidName.Name = "textBoxVidName";
             this.textBoxVidName.Size = new System.Drawing.Size(100, 20);
             this.textBoxVidName.TabIndex = 12;
@@ -128,7 +128,7 @@
             // Namel
             // 
             this.Namel.AutoSize = true;
-            this.Namel.Location = new System.Drawing.Point(330, 96);
+            this.Namel.Location = new System.Drawing.Point(281, 17);
             this.Namel.Name = "Namel";
             this.Namel.Size = new System.Drawing.Size(83, 13);
             this.Namel.TabIndex = 14;
@@ -137,7 +137,7 @@
             // NameRedakName
             // 
             this.NameRedakName.AutoSize = true;
-            this.NameRedakName.Location = new System.Drawing.Point(520, 96);
+            this.NameRedakName.Location = new System.Drawing.Point(422, 16);
             this.NameRedakName.Name = "NameRedakName";
             this.NameRedakName.Size = new System.Drawing.Size(83, 13);
             this.NameRedakName.TabIndex = 18;
@@ -145,7 +145,7 @@
             // 
             // textBoxRedakVidName
             // 
-            this.textBoxRedakVidName.Location = new System.Drawing.Point(520, 115);
+            this.textBoxRedakVidName.Location = new System.Drawing.Point(422, 35);
             this.textBoxRedakVidName.Name = "textBoxRedakVidName";
             this.textBoxRedakVidName.Size = new System.Drawing.Size(100, 20);
             this.textBoxRedakVidName.TabIndex = 16;
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(551, 327);
             this.Controls.Add(this.NameRedakName);
             this.Controls.Add(this.textBoxRedakVidName);
             this.Controls.Add(this.Namel);

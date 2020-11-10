@@ -33,7 +33,9 @@ namespace WindowsFormsApp1
 
         public void Update(int Vid_id, int Marka_id, int Postavchik_id, int Mass, string Opisanie, int id)
         {
-            string h = "UPDATE Transport set  Vid_id=" + Vid_id + ", Marka_id=" + Marka_id + ", Postavchik_id=" + Postavchik_id + ", Mass=" + Mass + ", Opisanie='" + Opisanie + "' WHERE Id = " + id + "";
+            string h = "UPDATE Transport set  Vid_id=" + Vid_id + ", Marka_id=" + Marka_id 
+                + ", Postavchik_id=" + Postavchik_id + ", Mass=" + Mass + ", Opisanie='" 
+                + Opisanie + "' WHERE Id = " + id + "";
             conn.Open();
             SqlCommand command = new SqlCommand(h, conn);
             command.ExecuteNonQuery();

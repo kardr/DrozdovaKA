@@ -24,13 +24,14 @@ namespace WindowsFormsApp1
             {
                 string login = textBoxLogin.Text;
                 string password = textBoxPassword.Text;
-                //string s = "Persist Security Info = False; User ID = " + login + "; Password = " + password + "; Initial Catalog = Sklad; Server = DESKTOP-8G1ENMJ\\KRNALX";
-                //SqlConnection conn = new SqlConnection(s);
-                //conn.Open();
+                string s = "Persist Security Info = False; User ID = " + login + "; Password = " 
+                    + password + "; Initial Catalog = Sklad; Server = DESKTOP-8G1ENMJ\\KRNALX";
+                SqlConnection conn = new SqlConnection(s);
+                conn.Open();
                 TransporForm f = new TransporForm();
                 f.Show();
                 this.Visible = false;
-                //conn.Close();
+                conn.Close();
             }
             catch (Exception ex)
             {
