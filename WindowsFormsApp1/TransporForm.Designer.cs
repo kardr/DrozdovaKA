@@ -74,7 +74,7 @@
             // 
             // DeleteTransport
             // 
-            this.DeleteTransport.Location = new System.Drawing.Point(634, 87);
+            this.DeleteTransport.Location = new System.Drawing.Point(667, 127);
             this.DeleteTransport.Name = "DeleteTransport";
             this.DeleteTransport.Size = new System.Drawing.Size(99, 39);
             this.DeleteTransport.TabIndex = 1;
@@ -84,7 +84,7 @@
             // 
             // RedaktirTransport
             // 
-            this.RedaktirTransport.Location = new System.Drawing.Point(634, 132);
+            this.RedaktirTransport.Location = new System.Drawing.Point(667, 172);
             this.RedaktirTransport.Name = "RedaktirTransport";
             this.RedaktirTransport.Size = new System.Drawing.Size(99, 39);
             this.RedaktirTransport.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.dataGridViewTransport.Location = new System.Drawing.Point(12, 45);
             this.dataGridViewTransport.Name = "dataGridViewTransport";
             this.dataGridViewTransport.RowHeadersVisible = false;
-            this.dataGridViewTransport.Size = new System.Drawing.Size(616, 217);
+            this.dataGridViewTransport.Size = new System.Drawing.Size(616, 250);
             this.dataGridViewTransport.TabIndex = 3;
             // 
             // idDataGridViewTextBoxColumn
@@ -178,7 +178,7 @@
             // 
             // DobavlenieTransport
             // 
-            this.DobavlenieTransport.Location = new System.Drawing.Point(634, 45);
+            this.DobavlenieTransport.Location = new System.Drawing.Point(667, 85);
             this.DobavlenieTransport.Name = "DobavlenieTransport";
             this.DobavlenieTransport.Size = new System.Drawing.Size(99, 36);
             this.DobavlenieTransport.TabIndex = 4;
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 372);
             this.Controls.Add(this.DobavlenieTransport);
             this.Controls.Add(this.dataGridViewTransport);
             this.Controls.Add(this.RedaktirTransport);

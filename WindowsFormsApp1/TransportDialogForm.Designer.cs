@@ -70,7 +70,7 @@
             this.comboBoxIDmarka.DataSource = this.markaBindingSource;
             this.comboBoxIDmarka.DisplayMember = "Name";
             this.comboBoxIDmarka.FormattingEnabled = true;
-            this.comboBoxIDmarka.Location = new System.Drawing.Point(38, 150);
+            this.comboBoxIDmarka.Location = new System.Drawing.Point(36, 105);
             this.comboBoxIDmarka.Name = "comboBoxIDmarka";
             this.comboBoxIDmarka.Size = new System.Drawing.Size(121, 21);
             this.comboBoxIDmarka.TabIndex = 2;
@@ -91,7 +91,7 @@
             this.comboBoxIDvid.DataSource = this.vidBindingSource1;
             this.comboBoxIDvid.DisplayMember = "Name";
             this.comboBoxIDvid.FormattingEnabled = true;
-            this.comboBoxIDvid.Location = new System.Drawing.Point(38, 102);
+            this.comboBoxIDvid.Location = new System.Drawing.Point(36, 57);
             this.comboBoxIDvid.Name = "comboBoxIDvid";
             this.comboBoxIDvid.Size = new System.Drawing.Size(121, 21);
             this.comboBoxIDvid.TabIndex = 3;
@@ -112,7 +112,7 @@
             this.comboBoxIDpostavchik.DataSource = this.postavchikBindingSource;
             this.comboBoxIDpostavchik.DisplayMember = "Name";
             this.comboBoxIDpostavchik.FormattingEnabled = true;
-            this.comboBoxIDpostavchik.Location = new System.Drawing.Point(38, 206);
+            this.comboBoxIDpostavchik.Location = new System.Drawing.Point(36, 161);
             this.comboBoxIDpostavchik.Name = "comboBoxIDpostavchik";
             this.comboBoxIDpostavchik.Size = new System.Drawing.Size(121, 21);
             this.comboBoxIDpostavchik.TabIndex = 4;
@@ -131,7 +131,7 @@
             // Vid
             // 
             this.Vid.AutoSize = true;
-            this.Vid.Location = new System.Drawing.Point(38, 86);
+            this.Vid.Location = new System.Drawing.Point(36, 41);
             this.Vid.Name = "Vid";
             this.Vid.Size = new System.Drawing.Size(26, 13);
             this.Vid.TabIndex = 5;
@@ -140,7 +140,7 @@
             // Marka
             // 
             this.Marka.AutoSize = true;
-            this.Marka.Location = new System.Drawing.Point(38, 134);
+            this.Marka.Location = new System.Drawing.Point(36, 89);
             this.Marka.Name = "Marka";
             this.Marka.Size = new System.Drawing.Size(40, 13);
             this.Marka.TabIndex = 6;
@@ -149,7 +149,7 @@
             // Postav
             // 
             this.Postav.AutoSize = true;
-            this.Postav.Location = new System.Drawing.Point(35, 190);
+            this.Postav.Location = new System.Drawing.Point(33, 145);
             this.Postav.Name = "Postav";
             this.Postav.Size = new System.Drawing.Size(65, 13);
             this.Postav.TabIndex = 7;
@@ -157,7 +157,7 @@
             // 
             // textBoxOpisanie
             // 
-            this.textBoxOpisanie.Location = new System.Drawing.Point(275, 251);
+            this.textBoxOpisanie.Location = new System.Drawing.Point(36, 269);
             this.textBoxOpisanie.Multiline = true;
             this.textBoxOpisanie.Name = "textBoxOpisanie";
             this.textBoxOpisanie.Size = new System.Drawing.Size(163, 134);
@@ -166,7 +166,7 @@
             // Opisanie
             // 
             this.Opisanie.AutoSize = true;
-            this.Opisanie.Location = new System.Drawing.Point(275, 235);
+            this.Opisanie.Location = new System.Drawing.Point(45, 253);
             this.Opisanie.Name = "Opisanie";
             this.Opisanie.Size = new System.Drawing.Size(57, 13);
             this.Opisanie.TabIndex = 9;
@@ -175,7 +175,7 @@
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(335, 86);
+            this.buttonOK.Location = new System.Drawing.Point(224, 291);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 10;
@@ -186,7 +186,7 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(335, 124);
+            this.buttonCancel.Location = new System.Drawing.Point(224, 330);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 11;
@@ -222,7 +222,7 @@
             // Mass
             // 
             this.Mass.AutoSize = true;
-            this.Mass.Location = new System.Drawing.Point(38, 245);
+            this.Mass.Location = new System.Drawing.Point(36, 200);
             this.Mass.Name = "Mass";
             this.Mass.Size = new System.Drawing.Size(32, 13);
             this.Mass.TabIndex = 15;
@@ -231,21 +231,21 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 246);
+            this.label2.Location = new System.Drawing.Point(47, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 14;
             // 
             // textBoxMass
             // 
-            this.textBoxMass.Location = new System.Drawing.Point(38, 262);
+            this.textBoxMass.Location = new System.Drawing.Point(36, 217);
             this.textBoxMass.Name = "textBoxMass";
             this.textBoxMass.Size = new System.Drawing.Size(121, 20);
             this.textBoxMass.TabIndex = 13;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 52);
+            this.textBox1.Location = new System.Drawing.Point(36, 7);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 16;
@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(410, 433);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Mass);
             this.Controls.Add(this.label2);
